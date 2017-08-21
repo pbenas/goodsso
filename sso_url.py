@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Created by GoodData Corporation, developed by Stanislav Prokop (all hate and love redirect towards this person.)
+# Created by GoodData Corporation
 # Requirements:
 # - python2.7 OR python2.6 with argparse package
 # - (optional) gnupg package
@@ -22,9 +22,9 @@ gpg --armor --output enc.txt --encrypt --recipient security@gooddata.com signed.
 
 Examples:
 # you need gnupg package
-./sso_url.py --server-url "qa.gooddata.com" --customer-user "qa+sso@gooddata.com" --login "stanislav.prokop@gooddata.com"
+./sso_url.py --server-url "qa.gooddata.com" --customer-user "qa+sso@gooddata.com" --login "user@gooddata.com"
 # you need to see your result now!
-./sso_url.py --server-url "qa.gooddata.com" --customer-user "qa+sso@gooddata.com" --login "stanislav.prokop@gooddata.com" --open-browser
+./sso_url.py --server-url "qa.gooddata.com" --customer-user "qa+sso@gooddata.com" --login "user@gooddata.com" --open-browser
 # you don't need gnupg
 ./sso_url.py --server-url "qa.gooddata.com" --encrypted-file /tmp/enc.txt 
 """
